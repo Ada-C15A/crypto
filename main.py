@@ -1,4 +1,3 @@
-# from caesar import rot13
 from caesar import caesar
 
 def crypt_letter(letter, key_letter):
