@@ -23,9 +23,10 @@ def caesar(msg):
     return "".join([rot13(letter) for letter in msg])
     
 def main():
-    pass
-    # print(f"{caesar('Hello')=}")
-    # print(f"{crypt('Hello', 'key')=}")
+    print(f"{caesar('Hello')=}")
+    print(f"{crypt('Hello', 'key')=}")
+    print(f"{caesar('Uryyb')=}")
+    print(repr(crypt('#\x00\x15\x07\n', 'key')))
 
 if __name__ == '__main__':
     main()
